@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加书籍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .booksInfo {
+            height: 400px;
+            width: 500px;
+            border: 1px solid skyblue;
+            margin: 100px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        h3 {
+            margin-bottom: 50px;
+        }
+        span {
+            display: inline-block;
+            width: 60px;
+            text-align: right;
+        }
+        input {
+           margin: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="booksInfo">
+    <h3>请输入书籍信息</h3>
+    <form action="http://127.0.0.1:8080/www/bookAdd" method="POST">
+        <span>书名:</span><input type="text" name="name"><br>
+        <span> 作者:</span><input type="text" name="author"><br>
+        <span>ISBN:</span> <input type="text" name="isbn"><br>
+        <span>价格:</span> <input type="text" name="price"><br>
+        <span>备注:</span><input type="text" name="memo"><br>
+        <input type="submit" value="提交">
+    </form>
+   </div>
+</body>
+</html>
